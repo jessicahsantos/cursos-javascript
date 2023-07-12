@@ -49,4 +49,11 @@ function montaTd(dado,classe){
     return td;
 }
 
+function validaPaciente(paciente){
+    if(paciente.altura < 3.0 && paciente.altura >= 0){
+        return true;
+    }
+}
+
+
 
