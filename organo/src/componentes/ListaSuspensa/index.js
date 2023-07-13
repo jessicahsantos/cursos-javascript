@@ -4,11 +4,11 @@ const ListaSuspensa = (props) => {
   console.log(props.itens)
 
   return (
-    <div>
+    <div className='lista-suspensa'>
       <label>{props.label}</label>
       <select>
         {props.itens.map(item => {
-          return <option>{item}</option>
+          return <option key={item}>{item}</option>
         })}
       </select>
     </div >
